@@ -1,0 +1,120 @@
+body{
+    height: 99vh;
+    width: 99vw;
+    margin: auto;
+    overflow: hidden;
+    padding:0;
+}
+.fill-height{
+    height: 600px;
+}
+.half-height{
+    max-height: 50%;
+}
+.vertical-middle{
+    vertical-align: middle;
+}
+.relative{
+    position: relative;
+}
+#mot_loading{
+    animation: loadingtext 1.5s step-end infinite;
+}
+
+.console{
+    background: hsl(40,60%,10%);
+    color: hsl(100,80%,40%);
+    font-family: Courier New, Courier, monospace;
+    padding: 35px;
+    margin: 82px auto;
+    width: 418px;
+    height: 270px;
+    vertical-align: middle;
+}
+.console.loading-motivation p{
+      animation: none;
+}
+
+.console.loading-motivation p.active {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  animation: 
+    typing 3.0s steps(41, end),
+    blink-caret .75s step-end infinite;
+}
+
+.progress-container{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    height: 32px;
+    padding: 4px 16px;
+    background-color: #fff;
+}
+.progress-start{
+    top:0;
+    position: absolute;
+    left: 0;
+    height: 32px;
+    width: 14px;
+    line-height: 24px;
+    padding: 4px 0;
+}
+.progress-end{
+    top:0;
+    position: absolute;
+    right: 0;
+    height: 32px;
+    width: 14px;
+    line-height: 24px;
+    padding: 4px 0;
+}
+.progress-bar{
+    width: 1%;
+    background: repeating-linear-gradient(-45deg, hsl(20, 65%,30%), hsl(60, 65%,30%) 25px, hsl(192,42%,30%) 25px, hsl(152,42%,30%) 50px);
+    height: 24px;
+    transition: width 1s;
+}
+
+.grumpyrow{
+    height: 0px;
+    overflow: hidden;
+    margin: auto 0;
+    transition: height 1.5s;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    padding:0;
+    z-index: 2;
+}
+.grumpyrow h1{
+    height: 10%;
+    text-align: center;
+    font-weight: bold;
+}
+.grumpyrow img{
+    width: 100%;
+    max-height: 90%;
+}
+
+
+@keyframes loadingtext {
+    from,to {text-shadow: 0 0 0 black}
+    50% {text-shadow: 0 0 3px black}
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf8"/>
+        <meta title="Lindas Motivation"/>
+        <title>Lindas Motivation</title>
+        <link type="text/css" rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css" />
+        <link type="text/css" rel="stylesheet" href="/css/custom.css" />
+    </head>
+    <body>
+        <div class="container fill-height relative">
+            <div class="row fill-height">
+                <div class="col-xs-6 col-xs-offset-3 half-height vertical-middle" >
+                    <h1>Motivation <span id="mot_loading">loading...</span></h1>
+                    <div id="load_motivation" class="console loading-motivation">
+
+                    </div>
+                    <div id="progress-container" class="progress-container">
+                        <div id="progress-start" class="progress-start"></div>
+                        <div id="progress-bar" class="progress-bar"></div>
+                        <div id="progress-end" class="progress-end"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="grumpyrow" class="row grumpyrow">
+                <h1 class="grumpy-says-no">No.</h1>
+                <img src="/css/grumpy.jpg" />
+            </div>
+            <div class="row"><div class="col-xs-12">&nbsp;</div></div>
+            <div class="row"><div class="col-xs-12">&nbsp;</div></div>
+            <div class="row">
+                <div class="col-xs-3">&nbsp;</div>
+                <div class="col-xs-3"><button id="start-loading" class="btn btn-xl btn-primary btn-block">Motivation laden</button></div>
+                <div class="col-xs-3"><button id="reset-loading" class="btn btn-xl btn-error btn-block">Nochmal versuchen</button></div>
+                <div class="col-xs-3">&nbsp;</div>
+            </div>
+        </div>
+        <script src="/lib/jquery/dist/jquery.min.js"></script>
+        <script src="scripts/custom.js"></script>
+    </body>
+</html>
